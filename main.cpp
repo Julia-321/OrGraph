@@ -1,15 +1,13 @@
 #include <iostream>
 #include "Graph.h"
 
+#include <SFML/Window.hpp>
 
-int main() {
-    try {
-        Graph g(3);
-        std::cout << g.edge(1, 5) << "\n";
-        std::cout << g.edge(1, 2) << "\n";
-    }
-    catch (std::exception& e) {
-        std::cout << e.what() << "\n";
-    }
+
+int main(int argc, char** argv){
+    sf::Window window(sf::VideoMode(800, 600), "My window");
+    Graph g;
+    std::cin >> g;
+    std::cout << g;
     return 0;
 }
