@@ -4,10 +4,9 @@
 #include <SFML/Window.hpp>
 
 
-int main(int argc, char** argv){
-    sf::Window window(sf::VideoMode(800, 600), "My window");
+int main(){
     Graph g;
     std::cin >> g;
-    std::cout << g;
+    std::cout << g << g.MinSpanTree();
     return 0;
 }
